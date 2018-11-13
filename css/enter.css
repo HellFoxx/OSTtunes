@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body, html, h1 {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #530FAD;
+}
+ #pixie{position:fixed;}
+
+.flex-box {
+	width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: center; 
+    overflow: auto;
+}
+
+.flex-label {
+	flex-direction: column;
+	align-items: center;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	width: 250px;
+}
+
+label {
+	display: block;
+	color: #fff;
+	font-size: 16px;
+}
+
+form {
+	margin-top: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+	width: 100%;
+	color: #530FAD;
+	padding: 5px;
+	border-radius: 5px;
+	border: none;
+}
+
+input[type="submit"] {
+	width: 100%;
+	background: none;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 16px;
+	margin-top: 20px;
+	width: 100px;
+	padding: 5px 0 5px 0;
+}
+
+.password {
+	margin-top: 15px;
+}
+
+.enter-btn {
+	width: 100px;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+	color: #fff;
+	font-size: 42px;
+}
+
+/*Bootstrap blue border disactivating*/
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  outline: 0 none;
+}

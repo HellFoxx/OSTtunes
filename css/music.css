@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html, body, ul, li, a, p, div, img, nav, b, h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+html {
+	background-color: #EDEEF0;
+}
+
+/*----------------------------- clearfix -----------------------------*/
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.zoom {
+	width: 50%;
+	height: 50%;
+	position: absolute;
+}
+
+.zoom:nth-child(2) {
+	right: 0;
+}
+
+.zoom:nth-child(3) {
+	left: 0;
+	bottom: 0;
+}
+
+.zoom:nth-child(4) {
+	right: 0;
+	bottom: 0;
+}
+
+.block {
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.zoom:hover .block,
+.zoom:focus .block {
+  transform: scale(1.2);
+  transition: all .5s;
+}
+
+.zoom:not(:hover) .block,
+.zoom:not(:focus) .block {
+  transition: all .5s;
+}
+
+.games {
+	background-image: url(../images/music_1.jpg);
+}
+
+.films {
+	right: 0;
+	background-image: url(../images/music_2.jpg);
+}
+
+.serials {
+	bottom: 0;
+	background-image: url(../images/music_3.jpg);
+}
+
+.cartoon {
+	right: 0;
+	bottom: 0;
+	background-image: url(../images/music_4.jpg);
+}
+
+h1 {
+	color: #fff;
+	font-size: 60px;
+	display: block;
+}
+
+h1 a {
+	color: #fff;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #530FAD;
+	transition: 0.5s;
+	text-decoration: none; 
+}
+
+a:not(:hover) {
+	color: #FFF;
+	transition: 0.5s;
+}
+
+a:focus {
+	text-decoration: none;
+}
+
+a:active {
+	color: #fff;
+	transition: 0.5s;
+}
+
+@media (max-width: 575.98px) {
+	
+	.block {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.zoom {
+		width: 100%;
+		height: 25%;
+		position: absolute;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.zoom:nth-child(2) {
+		top: 25%;
+	}
+
+	.zoom:nth-child(3) {
+		top: 50%;
+	}
+
+	h1 {
+		font-size: 44px;
+		margin-top: 10px;
+	}
+
+	.zoom:hover .block,
+	.zoom:focus .block {
+ 		transform: none;
+  		transition: none;
+	}
+
+	.zoom:not(:hover) .block,
+	.zoom:not(:focus) .block {
+  		transition: none;
+	}
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+	h1 {
+		font-size: 34px;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+	h1 {
+		font-size: 46px;
+	}
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
